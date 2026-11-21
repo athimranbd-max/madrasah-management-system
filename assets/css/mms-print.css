@@ -1,0 +1,87 @@
+/**
+ * Madrasah Management System Print Stylesheet
+ */
+
+@media print {
+    #adminmenumain,
+    #wpadminbar,
+    #wpfooter,
+    .notice,
+    .updated,
+    .error,
+    .mms-header,
+    .mms-tabs,
+    .mms-filter-card,
+    .mms-no-print,
+    .mms-modal-footer,
+    .mms-modal-close,
+    .mms-modal-header,
+    .mms-btn {
+        display: none !important;
+    }
+
+    #wpcontent,
+    #wpbody-content {
+        margin-left: 0 !important;
+        padding: 0 !important;
+    }
+
+    body {
+        background: #ffffff !important;
+        color: #000000 !important;
+        font-family: 'Hind Siliguri', sans-serif !important;
+    }
+
+    .mms-wrap {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .mms-modal {
+        position: static !important;
+        background: none !important;
+        display: block !important;
+    }
+
+    .mms-modal-content {
+        box-shadow: none !important;
+        border: none !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .mms-modal-body {
+        padding: 0 !important;
+        max-height: none !important;
+        overflow: visible !important;
+    }
+
+    .mms-receipt-container {
+        border: 2px solid #000000 !important;
+        padding: 20px !important;
+        margin: 0 auto !important;
+        max-width: 700px !important;
+    }
+
+    .mms-printable-report {
+        box-shadow: none !important;
+        border: none !important;
+        padding: 0 !important;
+    }
+
+    table {
+        border-collapse: collapse !important;
+        width: 100% !important;
+    }
+
+    th, td {
+        border: 1px solid #333333 !important;
+        color: #000000 !important;
+    }
+
+    @page {
+        margin: 15mm;
+    }
+}
